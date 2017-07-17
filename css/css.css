@@ -1,0 +1,783 @@
+.principal > header .uti-lateral > div, .principal > header .logotipo > div {
+  background: url("../img/user.png") center no-repeat;
+  background-size: cover; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+@keyframes mouve {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(205%); } }
+.d-none-a::after {
+  display: none !important; }
+
+.icon-info {
+  margin-top: 1rem; }
+  .icon-info i::before {
+    font-family: 'FontAwesome';
+    content: "\f06a"; }
+
+.icon-alert {
+  margin-top: 1rem; }
+  .icon-alert i::before {
+    font-family: 'FontAwesome';
+    content: "\f071"; }
+
+.notification {
+  z-index: 2;
+  background: #000000;
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  max-width: 260px;
+  color: #ffffff;
+  padding: 1rem;
+  max-height: 84px;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap; }
+  .notification hgroup {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: flex-end; }
+    .notification hgroup i {
+      font-size: 1.2rem; }
+  .notification .noti-contiudo {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap; }
+    .notification .noti-contiudo i {
+      font-size: 3.5rem;
+      margin-right: 1rem; }
+      .notification .noti-contiudo i::before {
+        display: inline-block;
+        vertical-align: middle; }
+    .notification .noti-contiudo p {
+      display: flex;
+      flex-direction: column;
+      flex-flow: column nowrap;
+      font-size: 1rem;
+      text-align: justify; }
+      .notification .noti-contiudo p span {
+        font-size: 1.2rem;
+        font-family: Tulia_bold;
+        text-transform: capitalize; }
+
+.corpoModal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2; }
+  .corpoModal .alert {
+    background: #ffffff;
+    width: 350px;
+    margin: 10% auto;
+    padding: 1rem; }
+    .corpoModal .alert > section {
+      display: flex;
+      flex-direction: row;
+      flex-flow: row nowrap;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+      align-items: center; }
+      .corpoModal .alert > section i.fa-exclamation-triangle {
+        color: #FF8C00; }
+      .corpoModal .alert > section i {
+        font-size: 7rem;
+        margin-right: 1rem; }
+      .corpoModal .alert > section p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        text-align: justify; }
+  .corpoModal .corpo-modal {
+    background: #ffffff;
+    width: 350px;
+    margin: 10% auto;
+    padding: 1rem; }
+    .corpoModal .corpo-modal header {
+      text-align: center;
+      flex: 1 0;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    .corpoModal .corpo-modal .modal-dados {
+      margin-bottom: 1rem; }
+  .corpoModal footer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: flex-end; }
+    .corpoModal footer button {
+      margin-left: 0.3rem; }
+
+.corpoModal-alert {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2; }
+
+.corpoLoad {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0);
+  z-index: 2;
+  line-height: 60rem;
+  font-size: 1.8rem;
+  color: #3c8dbc;
+  font-family: Tulia_bold;
+  text-align: center; }
+
+.load-dash {
+  width: 100%;
+  border-top: 0.3rem solid rgba(60, 141, 188, 0.1); }
+  .load-dash::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    border-top: 0.3rem solid #66CDAA;
+    animation: mouve 3s linear infinite; }
+
+.loader {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline-block;
+  vertical-align: middle; }
+
+.load-circle {
+  border-radius: 100%;
+  position: relative; }
+  .load-circle::after {
+    content: '';
+    position: absolute;
+    top: -0.3rem;
+    left: -0.3rem;
+    bottom: -0.3rem;
+    right: -0.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 100%;
+    border: 0.3rem solid transparent;
+    border-top-color: #3c8dbc;
+    animation: spin 1s linear infinite; }
+
+.load-double {
+  border-radius: 100%;
+  border: 0.4rem solid transparent;
+  border-top-color: #3c8dbc;
+  border-bottom-color: #3c8dbc;
+  position: relative;
+  animation: spin 2s linear infinite; }
+  .load-double::after {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    border-radius: 100%;
+    border: 0.3rem solid transparent;
+    border-top-color: rgba(0, 128, 0, 0.6);
+    border-bottom-color: rgba(0, 128, 0, 0.6);
+    animation: spinreverse 1.5s linear infinite; }
+  .load-double::before {
+    content: '';
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    right: 1.2rem;
+    border-radius: 100%;
+    border: 0.2rem solid transparent;
+    border-top-color: rgba(0, 128, 0, 0.4);
+    border-bottom-color: rgba(0, 128, 0, 0.4);
+    animation: spin 0.8s linear infinite; }
+
+.btn-cancel {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: 0;
+  font-size: 1rem;
+  font-family: Tulia_bold;
+  background: rgba(204, 204, 204, 0.8);
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: capitalize; }
+  .btn-cancel:hover {
+    cursor: pointer; }
+  .btn-cancel:hover {
+    background: #cccccc;
+    color: rgba(0, 0, 0, 0.6); }
+
+.btn-branco {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: 0;
+  font-size: 1rem;
+  font-family: Tulia_bold;
+  background: transparent;
+  color: #ffffff;
+  text-transform: capitalize; }
+  .btn-branco:hover {
+    cursor: pointer; }
+
+.btn-confirmar {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: 0;
+  font-size: 1rem;
+  font-family: Tulia_bold;
+  background: rgba(60, 141, 188, 0.8);
+  color: #ffffff;
+  text-transform: capitalize; }
+  .btn-confirmar:hover {
+    cursor: pointer; }
+  .btn-confirmar:hover {
+    background: #3c8dbc; }
+
+.btn-registar {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: 0;
+  font-size: 1rem;
+  font-family: Tulia_bold;
+  background: rgba(0, 128, 0, 0.8);
+  color: #ffffff;
+  text-transform: capitalize; }
+  .btn-registar:hover {
+    cursor: pointer; }
+  .btn-registar:hover {
+    background: #008000; }
+
+.btn-eliminar {
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: 0;
+  font-size: 1rem;
+  font-family: Tulia_bold;
+  background: rgba(204, 0, 0, 0.8);
+  color: #ffffff;
+  text-transform: capitalize; }
+  .btn-eliminar:hover {
+    cursor: pointer; }
+  .btn-eliminar:hover {
+    background: #c00; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap; }
+
+.label-row {
+  justify-content: space-between;
+  width: 70%; }
+  .label-row > div:first-child {
+    margin-right: 1rem; }
+
+.label-input {
+  position: relative;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap; }
+  .label-input label {
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem !important;
+    text-transform: capitalize;
+    font-family: Tulia_bold;
+    color: rgba(0, 0, 0, 0.6); }
+  .label-input input[type=text], .label-input input[type=password], .label-input textarea, .label-input input[type=date],
+  .label-input .selecionado, .label-input .item-select {
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 0.01rem solid #cccccc;
+    box-shadow: 0px 0px 0.1rem 0 #cccccc;
+    border-radius: 0.2rem;
+    outline: none;
+    font-family: Tulia_regular; }
+  .label-input textarea {
+    resize: none; }
+  .label-input input[type=text]:hover, .label-input input[type=password]:hover, .label-input textarea:hover, .label-input input[type=date]:hover {
+    border: 0.01rem solid #3c8dbc;
+    box-shadow: 0px 0px 0.1rem 0 #3c8dbc; }
+  .label-input .selecionado {
+    font-weight: 500;
+    position: relative;
+    text-transform: capitalize; }
+    .label-input .selecionado::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "\f078";
+      font-family: 'FontAwesome';
+      color: #cccccc;
+      border-radius: 0 0.2rem 0.2rem 0;
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-left: 1rem; }
+    .label-input .selecionado:hover {
+      cursor: pointer; }
+      .label-input .selecionado:hover::after {
+        color: #3c8dbc; }
+  .label-input .item-select {
+    position: absolute;
+    width: 99.7%;
+    max-width: 99.7%;
+    padding: 0rem;
+    border-radius: 0rem 0rem 0.2rem 0.2rem;
+    margin-top: -0.1rem;
+    display: none;
+    z-index: 2;
+    max-height: 140px;
+    overflow: auto;
+    box-shadow: 0 0 0.1rem 0 #3c8dbc;
+    border: 0.01rem solid #3c8dbc; }
+    .label-input .item-select > li {
+      padding: 0.4rem;
+      list-style: none;
+      font-size: 1rem;
+      font-family: Tulia_regular;
+      background: #ffffff;
+      text-transform: capitalize; }
+      .label-input .item-select > li:hover {
+        cursor: pointer;
+        font-weight: bolder;
+        color: #3c8dbc; }
+
+.inputFocus {
+  border: 0.01rem solid #3c8dbc !important;
+  box-shadow: 0px 0px 0.1rem 0 #3c8dbc !important; }
+
+.inputErro {
+  border: 0.01rem solid #c00 !important;
+  box-shadow: 0px 0px 0.1rem 0 #c00 !important; }
+
+.inputFocus-l {
+  border: 0.01rem solid #3c8dbc !important;
+  box-shadow: 0px 0px 0.1rem 0 #ffffff !important; }
+
+.inputErro-l {
+  border: 0.01rem solid #c00 !important;
+  box-shadow: 0px 0px 0.1rem 0 #ffffff !important; }
+
+.fechar {
+  transform: translateX(230px); }
+
+.d-none {
+  display: none !important; }
+
+.flipped {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  transform: scale(0);
+  transition: transform 0.3s linear; }
+
+.flipped-2 {
+  transform: scale(0); }
+
+.card {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transform: scale(1);
+  transition: transform 0.3s linear; }
+
+.tabs-click {
+  color: #3c8dbc !important; }
+  .tabs-click:before {
+    border-bottom: 0.3rem solid #3c8dbc;
+    transform: scale(1) !important; }
+
+.sub-titulo {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: Tulia_bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.card-preco {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  width: 22%;
+  box-shadow: 0 0 0.8rem 0 #cccccc; }
+  .card-preco:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.1rem 0.1rem #3c8dbc; }
+    .card-preco:hover button {
+      border: 0.1rem solid #3c8dbc;
+      color: #3c8dbc; }
+  .card-preco hgroup {
+    padding: 0.8rem;
+    text-align: center;
+    margin-top: 2rem; }
+    .card-preco hgroup h1 {
+      font-size: 1.5rem;
+      font-family: Tulia_bold;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.6); }
+    .card-preco hgroup h2 {
+      font-size: 1rem; }
+  .card-preco figure {
+    align-self: center;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 0.5rem solid #3c8dbc;
+    padding: 1rem;
+    margin-top: 1.5rem; }
+    .card-preco figure figcaption {
+      margin: 28% auto; }
+      .card-preco figure figcaption b {
+        font-family: Tulia_bold;
+        font-size: 2.5rem; }
+      .card-preco figure figcaption small {
+        font-size: 1rem; }
+  .card-preco div {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    margin-left: -0.08rem;
+    margin-top: 1rem; }
+    .card-preco div ul {
+      width: 80%;
+      margin: 1rem auto; }
+      .card-preco div ul li {
+        list-style: none;
+        margin-left: 1rem;
+        padding: 0.1rem;
+        font-size: 1.2rem;
+        font-weight: 700; }
+        .card-preco div ul li:before {
+          font-family: 'FontAwesome';
+          font-weight: bolder;
+          margin-right: 0.8rem;
+          color: #3c8dbc; }
+    .card-preco div button {
+      margin: 1rem auto;
+      width: 130px;
+      border: 0.1rem solid #cccccc;
+      color: #cccccc;
+      padding: 1rem;
+      font-size: 1rem;
+      text-transform: uppercase; }
+
+.conta-desable:before {
+  color: #c00 !important; }
+
+.is-ative-list-regis {
+  background: rgba(60, 141, 188, 0.2); }
+  .is-ative-list-regis:hover {
+    background: rgba(60, 141, 188, 0.2) !important; }
+
+.is-ative-menu-lateral a {
+  background: rgba(255, 255, 255, 0.1);
+  border-right: 0.2rem #3c8dbc solid; }
+  .is-ative-menu-lateral a::after {
+    border-right: 5px solid #3c8dbc !important; }
+  .is-ative-menu-lateral a:before {
+    color: #3c8dbc; }
+
+.is-ative-menu-utili a {
+  color: #3c8dbc !important; }
+  .is-ative-menu-utili a:before {
+    color: #3c8dbc; }
+
+.menu-l-hide {
+  width: 50px;
+  min-width: 50px !important; }
+  .menu-l-hide ul li a::before {
+    margin-right: 1rem;
+    font-size: 1.5rem !important; }
+
+.menu-l-is-ative > h1::before {
+  margin-right: 1rem;
+  font-size: 1.5rem; }
+.menu-l-is-ative ul li a::before {
+  margin-right: 1rem;
+  font-size: 1rem; }
+.menu-l-is-ative ul li a::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  right: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent; }
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-size: 0.8rem; }
+
+@font-face {
+  font-family: Tulia_regular;
+  src: url("../fonts/Tulia_regular.otf"); }
+@font-face {
+  font-family: Tulia_bold;
+  src: url("../fonts/Tulia_bold.otf"); }
+@font-face {
+  font-family: Tulia_italic;
+  src: url("../fonts/Tulia_italic.otf"); }
+body {
+  font-family: Tulia_regular;
+  font: normal 100%;
+  font-weight: 400; }
+
+.principal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  z-index: 1; }
+
+.corpo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap; }
+
+.principal > header {
+  align-items: center;
+  background: #3c8dbc;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-between; }
+  .principal > header .uti-lateral {
+    width: 160px;
+    align-items: center;
+    padding: 0.5% 0 0.5% 1%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap; }
+    .principal > header .uti-lateral:hover {
+      background: rgba(0, 0, 0, 0.2);
+      cursor: pointer; }
+    .principal > header .uti-lateral > div {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      margin-right: 2%; }
+    .principal > header .uti-lateral > figcaption {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: lighter;
+      letter-spacing: -0.01rem; }
+  .principal > header .logotipo {
+    margin-left: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 215px; }
+    .principal > header .logotipo:hover {
+      cursor: pointer; }
+    .principal > header .logotipo > div {
+      width: 30px;
+      height: 30px;
+      border-radius: 5%; }
+    .principal > header .logotipo > h1 {
+      font-family: Tulia_bold;
+      font-size: 1rem;
+      color: #ffffff;
+      padding: 0 0 0 4%; }
+
+.menu-latera, .menu-utilizador {
+  flex: 1 0 auto;
+  min-width: 200px;
+  max-width: 200px; }
+
+.menu-latera {
+  background: rgba(0, 0, 0, 0.8); }
+  .menu-latera > h1 {
+    position: relative;
+    background: #000000;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    font-family: Tulia_bold; }
+    .menu-latera > h1::before {
+      font-family: 'FontAwesome';
+      cursor: pointer; }
+  .menu-latera > ul > li {
+    list-style: none; }
+    .menu-latera > ul > li > a {
+      font-family: Tulia_regular;
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      padding: 1rem;
+      font-size: 1rem;
+      text-transform: capitalize;
+      position: relative; }
+      .menu-latera > ul > li > a::before {
+        font-family: 'FontAwesome'; }
+      .menu-latera > ul > li > a:hover {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
+        border-right: 0.2rem #3c8dbc solid; }
+        .menu-latera > ul > li > a:hover::after {
+          border-right: 5px solid #3c8dbc; }
+        .menu-latera > ul > li > a:hover:before {
+          color: #3c8dbc; }
+
+.menu-utilizador {
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.08); }
+  .menu-utilizador > ul span {
+    padding: 0.6rem;
+    font-size: 1.5rem; }
+    .menu-utilizador > ul span:before {
+      font-weight: lighter;
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.5);
+      margin-right: 5px; }
+    .menu-utilizador > ul span:hover {
+      background: rgba(0, 0, 0, 0.05);
+      cursor: pointer; }
+  .menu-utilizador > ul > li {
+    list-style: none; }
+    .menu-utilizador > ul > li:hover {
+      background: rgba(0, 0, 0, 0.05); }
+      .menu-utilizador > ul > li:hover > a {
+        font-family: Tulia_bold;
+        color: #3c8dbc;
+        transition: 0.3s all; }
+        .menu-utilizador > ul > li:hover > a::before {
+          font-family: 'FontAwesome';
+          font-weight: 400;
+          color: #3c8dbc; }
+    .menu-utilizador > ul > li > a {
+      color: #000000;
+      text-decoration: none;
+      display: block;
+      padding: 0.8rem;
+      text-transform: capitalize;
+      font-family: Tulia_bold; }
+      .menu-utilizador > ul > li > a::before {
+        font-family: 'FontAwesome';
+        color: #3c8dbc;
+        margin-right: 5px; }
+
+/*
+	Css Calendario
+*/
+.calendario {
+  border: 0.01rem solid #cccccc;
+  box-shadow: 0px 0px 0.1rem 0 #cccccc;
+  border-radius: 0.2rem;
+  position: relative; }
+  .calendario:hover {
+    border: 0.01rem solid #3c8dbc;
+    box-shadow: 0px 0px 0.1rem 0 #3c8dbc; }
+  .calendario input {
+    box-shadow: 0px 0px 0.1rem 0 #ffffff !important;
+    border: 0 !important; }
+
+.jquery-simpledatepicker-CalendarBut {
+  cursor: pointer;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  border-radius: 0 0.2rem 0.2rem 0;
+  text-align: center; }
+  .jquery-simpledatepicker-CalendarBut:before {
+    color: #cccccc;
+    text-align: center;
+    font-family: 'FontAwesome';
+    font-size: 1.25rem; }
+  .jquery-simpledatepicker-CalendarBut:hover:before {
+    color: #3c8dbc; }
+
+.jquery-simpledatepicker-datepicker {
+  width: 18rem;
+  top: 2rem;
+  position: absolute;
+  z-index: 999999;
+  border: 0.01rem solid #cccccc;
+  font-family: Tulia_regular;
+  background: #ffffff; }
+
+.jquery-simpledatepicker-datepicker * {
+  float: left;
+  width: 14.2%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem; }
+
+.jquery-simpledatepicker-datepicker span {
+  font-size: 0.8rem;
+  font-weight: 700; }
+
+.jquery-simpledatepicker-preday,
+.jquery-simpledatepicker-postday {
+  color: #cccccc; }
+
+.jquery-simpledatepicker-datepicker a {
+  cursor: pointer; }
+
+.jquery-simpledatepicker-datepicker a:hover {
+  background: rgba(204, 204, 204, 0.5); }
+
+.jquery-simpledatepicker-datepickertoday {
+  background: #3c8dbc;
+  color: #ffffff; }
+
+.jquery-simpledatepicker-datetxt {
+  width: 70%;
+  font-size: 0.9rem !important;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Tulia_bold; }
+
+.jquery-simpledatepicker-CalendarCloseBut,
+.jquery-simpledatepicker-CalendarTodayBut {
+  width: 50%;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-weight: 700; }
+
+.jquery-simpledatepicker-CalendarCloset:hover {
+  color: #c00 !important; }
+
+.jquery-simpledatepicker-nextmonthbut,
+.jquery-simpledatepicker-prevmonthbut {
+  font-size: 1.5rem;
+  font-family: Tulia_bold; }
+  .jquery-simpledatepicker-nextmonthbut:hover,
+  .jquery-simpledatepicker-prevmonthbut:hover {
+    background: #ffffff !important; }
+
+/*# sourceMappingURL=css.css.map */

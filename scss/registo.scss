@@ -1,0 +1,58 @@
+.bem-vindo{
+		@include flex(column,nowrap);
+		text-align: center;
+		>hgroup{
+			margin-top: 2rem;
+			h1{
+				font-size: 3rem;
+				color: rgba($preto,0.6);
+				text-transform: uppercase;
+				font-weight: lighter;
+				letter-spacing:1rem;
+				margin-left: 2rem;
+				line-height: 2.5rem;
+			}
+			h2{
+				font-size: 1.2rem;
+				color: $preto;
+				font-weight: lighter;
+			}
+			
+		}
+		> div{
+			@include flex(row,nowrap);
+				justify-content: space-between;
+				margin: 0 auto;
+				width: 55%;
+			span{
+				border:1px solid $azul;
+				width: 45%;
+				position: relative;
+				margin-bottom: 2rem;
+				margin-top: 2rem;
+				&:before{
+					content:"";
+					width:15px;
+					height: 15px;
+					left: -1px;
+					top:-7px;
+					background: $azul;
+					position: absolute;
+					border-radius:  100%;
+				}
+				&:first-child{
+						&:before{
+						left: 100%;
+						right:-1px!important;
+					}
+				}
+
+			}
+		}
+		button{
+			margin: 0 auto;
+			width: 20%;
+			margin-bottom: 2rem;
+			@include btn($azul,$branco);
+		}
+	}

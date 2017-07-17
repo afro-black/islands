@@ -1,0 +1,363 @@
+.contiudoPerfil > hgroup h1 {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  line-height: 2.5rem; }
+.contiudoPerfil > hgroup h2 {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: lighter;
+  text-transform: capitalize; }
+
+.contiudo .painel-dados .dados::-webkit-scrollbar {
+  width: 0.3rem; }
+.contiudo .painel-dados .dados::-webkit-scrollbar-thumb {
+  background: #3c8dbc; }
+
+.contiudoPerfil {
+  margin: 2.3rem auto;
+  flex: 6 0;
+  width: 100%;
+  max-height: 95%; }
+  .contiudoPerfil > hgroup {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem; }
+
+.contiudo .tabs ul {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap; }
+  .contiudo .tabs ul li {
+    position: relative;
+    font-family: Tulia_bold;
+    font-size: 1rem;
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-right: 1rem;
+    color: #000000;
+    transition: color 1s linear; }
+    .contiudo .tabs ul li:before {
+      content: "";
+      position: absolute;
+      left: 25%;
+      width: 50%;
+      bottom: 0;
+      border-bottom: 0.3rem solid #3c8dbc;
+      transform: scale(0);
+      transition: transform 0.5s linear; }
+    .contiudo .tabs ul li:hover {
+      color: #3c8dbc;
+      transition: color 0.3s linear;
+      cursor: pointer; }
+    .contiudo .tabs ul li:first-child {
+      margin-left: 1rem; }
+.contiudo .painel-dados {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  padding: 1rem;
+  max-height: 75%; }
+  .contiudo .painel-dados .dados-basic {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    min-width: 234px;
+    align-items: center; }
+    .contiudo .painel-dados .dados-basic .imgUtilizador {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 100%;
+      position: relative;
+      background: url("../img/user.png") center no-repeat;
+      background-size: cover; }
+    .contiudo .painel-dados .dados-basic .names-utili {
+      text-align: center; }
+      .contiudo .painel-dados .dados-basic .names-utili > h1 {
+        font-size: 1.2rem;
+        font-family: Tulia_bold;
+        color: #3c8dbc; }
+      .contiudo .painel-dados .dados-basic .names-utili h2, .contiudo .painel-dados .dados-basic .names-utili h3 {
+        color: #000000;
+        font-size: 1rem; }
+  .contiudo .painel-dados .dados {
+    flex: 3 0;
+    overflow: auto;
+    min-width: 375px; }
+    .contiudo .painel-dados .dados > div {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      flex-flow: row nowrap;
+      align-items: center; }
+      .contiudo .painel-dados .dados > div > figure {
+        background: url("../img/user.png") center no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        border: 0.01rem solid #cccccc;
+        border-radius: 100%; }
+      .contiudo .painel-dados .dados > div h1 {
+        margin-left: 2rem;
+        font-family: Tulia_bold;
+        font-size: 2rem; }
+    .contiudo .painel-dados .dados fieldset {
+      padding: 1rem;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      border: 0;
+      border-left: 0.2rem solid #cccccc;
+      max-width: 685.203px; }
+      .contiudo .painel-dados .dados fieldset:hover {
+        border-left: 0.2rem solid #008000 !important;
+        cursor: pointer; }
+      .contiudo .painel-dados .dados fieldset div label, .contiudo .painel-dados .dados fieldset div p {
+        font-size: 1rem; }
+      .contiudo .painel-dados .dados fieldset div label {
+        text-transform: capitalize;
+        font-family: Tulia_bold;
+        line-height: 1.5rem;
+        color: rgba(0, 0, 0, 0.6); }
+      .contiudo .painel-dados .dados fieldset h1 {
+        font-family: Tulia_bold;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        color: #3c8dbc; }
+
+.conta {
+  display: flex;
+  flex-direction: column !important;
+  flex-flow: column !important nowrap !important; }
+  .conta > div {
+    border-left: 0.2rem solid #cccccc;
+    width: 28%;
+    padding: 0.4rem;
+    background: rgba(204, 204, 204, 0.3); }
+    .conta > div p {
+      font-size: 1rem;
+      margin-left: 1rem; }
+  .conta > section {
+    flex: 1;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* 		.free{
+    			&:hover{
+    				box-shadow: 0 0 0.1rem 0.1rem $tomate;
+    				button{
+    				border:0.1rem solid $tomate;
+    				color:$tomate;
+    			}
+    			}
+    			hgroup{
+    				color:$tomate;
+    			}
+    			figure{
+    				border:0.5rem solid $tomate;
+    			}
+    		}
+    			.basic{
+    			&:hover{
+    				box-shadow: 0 0 0.1rem 0.1rem $verde;
+    				button{
+    				border:0.1rem solid $verde;
+    				color:$verde;
+    			}
+    			}
+    			hgroup{
+    				color:$verde;
+    			}
+    			figure{
+    				border:0.5rem solid $verde;
+    			}
+    		}
+    			.pro{
+    			&:hover{
+    				box-shadow: 0 0 0.1rem 0.1rem $laranjaE;
+    				button{
+    				border:0.1rem solid $laranjaE;
+    				color:$laranjaE;
+    			}
+    			}
+    			hgroup{
+    				color:$laranjaE;
+    			}
+    			figure{
+    				border:0.5rem solid $laranjaE;
+    			}
+    		}
+    
+    		.premiun{
+    			hgroup{
+    				color:$aguaMariaM;
+    				}
+    			&:hover{
+    				box-shadow: 0 0 0.1rem 0.1rem $aguaMariaM;
+    				button{
+    				border:0.1rem solid $aguaMariaM;
+    				color:$aguaMariaM;
+    				}
+    				
+    			}
+    		} */ }
+
+.registos {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap; }
+  .registos > section {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap; }
+
+.card {
+  margin: 1rem 1rem 0 0;
+  width: 190px;
+  border: 0.1rem solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  position: relative;
+  background: #ffffff; }
+  .card .card_data {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #3c8dbc;
+    border-radius: 100%;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+    font-family: Tulia_bold;
+    z-index: 999; }
+    .card .card_data span {
+      font-size: 1rem; }
+  .card .corpo {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap; }
+    .card .corpo .tump {
+      z-index: 999;
+      background: #ffffff;
+      padding: 1rem;
+      height: 50px; }
+      .card .corpo .tump hgroup h1 {
+        font-size: 2rem;
+        text-transform: uppercase; }
+      .card .corpo .tump hgroup h2 {
+        font-size: 1rem;
+        text-transform: capitalize; }
+      .card .corpo .tump .descricao, .card .corpo .tump footer {
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: justify;
+        opacity: 0; }
+      .card .corpo .tump footer {
+        display: flex;
+        flex-direction: row-reverse !important;
+        flex-flow: row-reverse !important nowrap;
+        display: flex !important; }
+        .card .corpo .tump footer i {
+          margin-left: 0.5rem;
+          font-size: 1rem;
+          text-align: center;
+          background: rgba(204, 204, 204, 0.6);
+          color: #000000;
+          width: 10px;
+          height: 10px;
+          padding: 0.8rem;
+          border-radius: 100%; }
+          .card .corpo .tump footer i:hover {
+            background: #cccccc; }
+    .card .corpo figure {
+      height: 150px;
+      position: relative; }
+      .card .corpo figure:before {
+        content: "";
+        background: url("../img/user.png") center no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 190px;
+        width: 100%; }
+      .card .corpo figure figcaption {
+        position: absolute;
+        background: #3c8dbc;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.5rem;
+        color: #ffffff;
+        text-transform: capitalize;
+        font-family: Tulia_bold; }
+  .card:hover {
+    cursor: pointer;
+    box-shadow: 0 0rem 1rem 0.1rem #cccccc;
+    transition: 1s; }
+    .card:hover figure {
+      height: 48px;
+      position: relative; }
+    .card:hover .tump {
+      height: auto; }
+    .card:hover .descricao, .card:hover footer {
+      display: block !important;
+      opacity: 1 !important;
+      transition: opacity 0.3s; }
+
+.ative {
+  background: #3c8dbc;
+  color: #ffffff;
+  border: 0.01rem solid #3c8dbc;
+  box-shadow: 0px 0px 0.1rem 0 #3c8dbc;
+  transition: 0.3s all; }
+  .ative::before {
+    content: "";
+    background: #008000 !important;
+    border: 0.1rem solid #ffffff !important; }
+
+.inative {
+  border: 0.01rem solid #cccccc;
+  box-shadow: 0px 0px 0.1rem 0 #cccccc; }
+  .inative::before {
+    content: "";
+    background: #008000 !important;
+    border: 0.1rem solid #ffffff !important; }
+
+.f-m {
+  width: 50%; }
+  .f-m div {
+    width: 50%;
+    padding: 0.4rem;
+    font-family: Tulia_bold;
+    position: relative;
+    text-indent: 1.5rem;
+    text-transform: capitalize; }
+    .f-m div:hover {
+      cursor: pointer; }
+    .f-m div::before {
+      content: "";
+      top: 0.4rem;
+      left: 0.4rem;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 100%;
+      background: #3c8dbc;
+      border: 0.1rem solid #008000;
+      position: absolute; }
+
+.fieldsetIsAtive {
+  border-left: 0.2rem solid #3c8dbc !important; }
+
+/*# sourceMappingURL=perfil.css.map */

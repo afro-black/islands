@@ -1,0 +1,88 @@
+@import '_cores.scss';
+@mixin flex($diretion,$wrap){
+  display: flex;
+  flex-direction:$diretion;
+  flex-flow:$diretion $wrap;
+}
+@mixin full($cor,$per){
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba($cor,$per);
+}
+@mixin btn($fundo,$color){
+			padding: 0.6rem;
+			border-radius: 0.2rem;
+			border:0;
+			font-size: 1rem;
+				font-family: Tulia_bold;
+			background: $fundo;
+			color:$color;
+			text-transform: capitalize;
+			&:hover {
+				cursor: pointer;
+			}
+}
+
+@mixin imgInput(){
+
+					position: relative;
+					border:0.2rem dashed $cinza;
+					width:10rem+0.6rem;
+					border-radius: 2%;
+					margin-top: 1rem;
+						label{
+							position: absolute;
+							top:-1.3rem;
+							margin-bottom: 0.2rem;
+							font-size: 0.8rem!important;
+							text-transform: capitalize;
+							font-family: Tulia_bold;
+							color: rgba($preto,0.6);
+						}
+
+				.img{
+					position: relative;
+					//background: url('../img/user.png') center no-repeat;
+  					background-size: cover;
+  					width:10rem;
+					height: 10rem;
+					margin: 0.3rem;
+					&::after{
+						content: "\f03e";
+						  font-family:'FontAwesome';
+						position: absolute;
+						font-size: 3rem;
+						color: $cinza;
+						text-align: center;
+						padding: 3.5rem;
+					}
+				
+				}
+				.icon{
+					top:0;
+					width:100%;
+					height: 100%;
+					position: absolute;
+					
+						
+				
+				}
+					&:hover{
+						border:0.2rem dashed $azul;
+						.img{
+							&::after{
+							color:$azul;}
+						}
+						.icon{
+							cursor: pointer;
+							
+						}
+					}
+				
+			input[type=file]{
+					display: none;	
+				}
+}

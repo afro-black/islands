@@ -1,0 +1,411 @@
+@import '_mixer.scss';
+@import '_cores.scss';
+@import '_placehold.scss';
+.contiudo{
+	flex:1 0 100;
+	width: 100%;
+	position: relative;
+	@include flex(row,nowrap);
+	
+	.lista-regis{
+		flex: 1 0 auto;
+		 min-width: 280px!important;
+		 	 max-width: 280px!important;
+		 	  box-shadow: 0 0rem 0.1rem 0rem rgba($cinza,0.9); 
+		> header{
+			@include flex(row,nowrap);
+    		justify-content: flex-end;
+			padding: 1rem;
+		    max-height: 19px;
+		    min-height: 19px;
+		    box-shadow:inset 0 -0.1rem 0.1rem 0rem rgba($cinza,0.3); 
+		    .selecionado{
+		    	width: 100px;
+		    	box-shadow: 0 0 0 0  $branco!important; 
+				border: 0.1rem solid $branco!important;
+				font-family: Tulia_bold;
+		    }
+
+		}
+		>ul{
+			overflow: hidden;
+				height: 92.9%;
+				overflow-y: scroll;
+			li{
+				padding: 0.5rem 1rem 0.5rem 1rem;
+				 @include flex(row,nowrap);
+				list-style: none;
+				justify-content: space-between;
+				&:hover{
+					cursor:pointer;
+					background:rgba($azul,0.05);
+				}
+				hgroup{
+					h1{
+						font-family: Tulia_bold;
+						font-size: 1rem;
+						text-transform: capitalize;
+					}
+					h2{
+						font-family: Tulia_bold;
+						text-transform: capitalize;
+						color: rgba($preto,0.6);
+					}	
+				}
+				div{
+					 @include flex(column,nowrap);
+					span{
+							font-family: Tulia_bold;
+						margin-top: 0.3rem;
+					align-self: flex-end;
+					color:$azul;
+				}
+					i{
+
+					color:rgba($preto,0.6);
+					opacity: 0;
+					align-self: flex-end;
+					font-size: 1.2rem;
+					&:hover{
+						color:$preto;
+					}
+				}
+				}
+				
+			}
+	@extend %scroll;
+		}
+	}
+.corpo-dash{
+	flex: 6 0 ;	
+	 @include flex(column,nowrap);
+	position:relative;
+	padding: 1rem;
+	.info{
+	flex: 6 0 ;
+	width: 	100%;
+	 @include flex(column,nowrap);
+	.contiudo-info{
+		margin:2.3rem auto;
+		flex: 6 0;
+		max-height: 95%;
+		width: 100%;
+		@include flex(column,nowrap);
+		> hgroup{
+		@extend %titulo;
+		margin-left: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	}
+	.info-dados{
+	@include flex(row,nowrap);
+			padding: 1rem;
+			max-height: 75%;
+		>aside{
+			flex:1 0;
+			 @include flex(column,nowrap);
+			padding: 	1rem;
+			min-width: 	234px;
+			align-items: center;
+			justify-content: center;
+			align-items: center;			
+			> .info-img{
+  					width: 8rem;
+					height: 8rem;
+					border-radius: 100%;
+					position: relative;
+					background: url('../img/user.png') center no-repeat;
+  					background-size: cover;
+			 }
+		 	 > hgroup{
+		 	 	text-align: center;
+		 	 	font-family: Tulia_bold;
+			 	@extend %titulo;
+			 	h1{
+			 		font-size: 1.5rem;
+			 		color:$azul;
+			 	}
+
+		 	}
+			> article{
+				padding: 0.8rem;	
+				p{
+					font-size: 1.1rem;	
+					text-align: justify;
+				}
+
+			}
+				.dados-btn{
+						margin-top: 1rem;
+						justify-content: flex-end;
+					i{
+						width: 3rem;
+						height: 3rem;
+						text-align: center;	
+						font-size: 1.4rem;
+						border-radius: 5%;
+						position: relative;
+						margin-right:  0.8rem;
+						color: rgba($preto,0.6);
+						background:$cinza;
+
+						&:hover{
+
+							color:$branco;
+							background:$azul;
+							cursor:pointer;
+						}
+						&::before{
+							position: absolute;
+							top: 0.8rem;
+							left:1rem;
+						}
+					}
+				}
+		}
+		.information{
+			flex:3 0;
+
+			 @include flex(column,nowrap);
+				justify-content: center;	
+				
+					.dados-info{	
+				flex:3 0 ;
+			overflow: auto;
+			@extend %scroll; 
+					min-width: 375px;
+				fieldset{
+				padding: 1rem;
+				margin-top: 1rem;
+				font-size: 0.8rem;
+				border:0;
+				border-left:0.2rem solid $cinza;
+				position: relative;
+				&::before{
+					position: absolute;
+					content:'';
+					height: 100%;
+					right: 100%;
+					top: 0;
+					border-left:0.2rem solid $azul;
+					transform:scale(0);
+					transition: transform 0.3s linear;
+
+
+				}
+				
+				&:hover{
+					cursor:pointer;
+					&::before{
+						transform:scale(1);
+					}
+				}
+				
+				div{
+					label,p{
+						font-size: 1rem;
+					}
+					label{
+						text-transform: capitalize;	
+						font-family: Tulia_bold;
+						line-height: 1.5rem,;
+						color: rgba($preto,0.7);	
+					}
+				}
+				h1{
+					font-family: Tulia_bold;	
+					text-transform: capitalize;
+					font-size: 1.2rem;
+					line-height: 2.5rem;
+					color:$azul;
+					
+				}
+	
+			}
+
+
+		}
+
+		}
+	}
+
+	
+			>i{
+			margin-top: 30%;
+			font-size: 6rem;
+			color:$azul;
+		}
+		>span{
+			font-size: 1.3rem;
+			margin-top: 2rem;
+			
+		}
+	}
+		.corpo-form{	
+
+			z-index: 2;
+
+			position: absolute;
+			background: $branco;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			max-height: 100%;
+				 transform:scale(0);
+				transition:transform 0.2s linear;
+			> section{
+				overflow: auto;
+		@extend %scroll;
+				width: 99%;
+				max-height:90%;
+			
+				hgroup{
+					width: 100%;
+					background:$branco;
+					position:fixed;
+					padding: 2rem;
+					z-index: 999;
+					 margin: 0 auto;
+					 text-align: center;
+			
+					@extend %titulo;
+					&::before{
+						content:'';
+						position: absolute;
+						width: 10%;
+						bottom: 0;
+						left:45%;
+						border-top:0.2rem solid $azul;	
+					}
+				}
+
+			}
+			>i{
+				font-size: 2rem;
+				color:rgba($vermelho,0.4);
+				position: absolute;
+				right: 3rem;
+				top: 2.5rem;
+				z-index: 99999;
+				&:hover{
+					cursor:pointer;
+					color:$vermelho;
+				}			
+			}
+			.form-regis{
+				background: $branco;			
+				margin: 8rem auto;
+				width: 60%;
+					.form-geral{
+						@include flex(column,wrap);
+				
+					div.form{
+						padding-top: 0.5rem;
+
+						@include flex(row,nowrap);
+						justify-content: space-between;
+						form.form{
+						width: 100%;
+						margin-left: 1rem;
+						@include flex(column,wrap);
+						textarea{
+							height: 6rem;
+
+						}
+					}
+					
+					
+					}
+						
+			
+				}
+				.form-contato{
+					@include flex(row,nowrap);
+					justify-content: space-between;
+					.label-input{
+						width: 32%;
+						
+					}
+				}
+				.registar{
+					@include flex(row,nowwrap);
+					margin-top: 1rem;
+					justify-content: flex-end;
+					button:first-child{
+						margin-right: 0.5rem;
+					}
+				}
+					.imgUtilizador{
+
+					position: relative;
+					border:0.18rem dashed $cinza;
+					width:10rem+0.6rem;
+					border-radius: 2%;
+					margin-top: 1rem;
+						label{
+							position: absolute;
+							top:-1.3rem;
+							margin-bottom: 0.2rem;
+							font-size: 0.8rem!important;
+							text-transform: capitalize;
+							font-family: Tulia_bold;
+							color: rgba($preto,0.6);
+						}
+
+				.img{
+					position: relative;
+  					width:10rem;
+					height: 10rem;
+					margin: 0.3rem;
+					img{
+						width:inherit;
+						height: inherit;
+						position: absolute;
+					}
+					&::after{
+
+						content: "\f03e";
+						  font-family:'FontAwesome';
+						position: absolute;
+						font-size: 3rem;
+						color: $cinza;
+						text-align: center;
+						padding: 3.5rem;
+					}
+				
+				}
+				.icon{
+					top:0;
+					width:100%;
+					height: 100%;
+					position: absolute;
+					
+						
+				
+				}
+					&:hover{
+						border:0.18rem dashed $azul;
+						.img{
+							&::after{
+							color:$azul;}
+						}
+						.icon{
+							cursor: pointer;
+							
+						}
+					}
+				
+			input[type=file]{
+					display: none;	
+				}
+			}
+					
+			}
+	}
+	}
+}
+.is-ative-form{
+	 transform:scale(1)!important;
+}
+

@@ -1,0 +1,30 @@
+@import '_cores.scss';
+%img{
+  background: url('../img/user.png') center no-repeat;
+  background-size: cover;
+}
+
+%titulo{
+	h1{
+		font-size: 3rem;
+		color: rgba($preto,0.6);
+		text-transform: uppercase;
+		line-height: 2.5rem;
+	}
+	h2{
+		font-size: 1.2rem;
+		color: $preto;
+		font-weight: lighter;
+		text-transform: capitalize;
+	}
+			
+}
+%scroll{
+	&::-webkit-scrollbar{
+				width:0.3rem;
+	}
+
+	&::-webkit-scrollbar-thumb {
+	background:$azul;
+	} 
+}

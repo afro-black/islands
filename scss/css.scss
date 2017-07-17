@@ -1,0 +1,313 @@
+
+@import '_placehold.scss';
+@import '_mixer.scss';
+@import '_cores.scss';
+@import '_class.scss';
+*{
+    padding: 0;
+    margin: 0;    
+    outline: none;
+    font-size: 0.8rem;
+}
+@font-face{
+	font-family: Tulia_regular;
+	src:url('../fonts/Tulia_regular.otf');
+}
+@font-face{
+	font-family: Tulia_bold;
+	src:url('../fonts/Tulia_bold.otf');
+}
+@font-face{
+	font-family: Tulia_italic;
+	src:url('../fonts/Tulia_italic.otf');
+}
+body{
+	font-family: Tulia_regular;
+    font: normal 100%;
+     font-weight: 400;
+}
+.principal{
+  @include full($branco,1);
+  @include flex(column,nowrap);
+  z-index: 1;
+}
+.corpo{
+  flex:1;
+  @include flex(row,nowrap);
+}
+.principal > header{
+  align-items: center;
+  background: $azul;
+  @include flex(row-reverse,nowrap);
+  justify-content: space-between;
+  .uti-lateral{
+    width: 160px;
+    align-items: center;
+    padding: 0.5% 0 0.5% 1%;
+    @include flex(row,nowrap);
+    &:hover{
+      background: rgba($preto,0.2);
+      cursor: pointer;
+    }
+    >div{
+      @extend %img;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      margin-right: 2%;
+    }
+    >figcaption{
+      color:$branco;
+      font-size: 1rem;
+      font-weight: lighter;
+      letter-spacing: -0.01rem;
+    }
+  }
+  .logotipo{
+    margin-left: 0.8rem;
+    @include flex(row,nowrap);
+    align-items: center;
+    width: 215px;
+    &:hover{
+      cursor:pointer;
+    }
+    >div{
+      @extend %img;
+      width: 30px;
+      height: 30px;
+      border-radius: 5%;
+    }
+    >h1{
+      font-family: Tulia_bold;
+      font-size: 1rem;
+      color:$branco;
+      padding: 0 0 0 4%;
+    }
+  } 
+}
+.menu-latera,.menu-utilizador{
+  flex:1 0 auto;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.menu-latera{
+   background: rgba($preto,0.8);
+  >h1{
+    position: relative;
+    background: $preto;
+    padding: 1rem 0 1rem 1rem;
+    font-size: 1.5rem;
+    color:$branco;
+    text-transform: uppercase;
+    display: block;
+    font-family: Tulia_bold;
+      &::before{
+          font-family:'FontAwesome';
+          cursor:pointer
+        }
+    
+  }
+  >ul{
+    >li{
+      list-style: none;
+    
+      >a{
+        font-family: Tulia_regular;
+        color:$branco;
+        text-decoration: none;  
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+        text-transform: capitalize;
+        position: relative;
+        &::before{
+          font-family:'FontAwesome';
+        }
+        &:hover{
+          color:$branco;
+          background: rgba($branco,0.1);
+          border-right:0.2rem $azul solid;
+          &::after{
+            border-right: 5px solid $azul; 
+          }
+          &:before{
+            color:$azul;
+          }
+        }
+        
+      
+      }
+      
+    }
+}
+}
+.menu-utilizador{
+  z-index: 3;
+  background:rgba($preto,0.08);
+  >ul{
+    span{
+      padding: 0.6rem;
+      font-size: 1.5rem;
+
+      &:before{
+        font-weight: lighter;
+        font-size: 1.5rem;
+        color:rgba($preto,0.5);
+        margin-right: 5px;
+      }
+      
+      &:hover{
+        background:rgba($preto,0.05);
+        cursor: pointer;
+
+      }
+    }
+    >li{
+      list-style: none;
+      &:hover{
+          background:rgba($preto,0.05);
+           >a{
+            font-family: Tulia_bold;
+            color:$azul;
+            transition: 0.3s all;
+            &::before{
+              font-family:'FontAwesome';
+            font-weight: 400;
+            color:$azul;
+          }
+           }
+        }
+      >a{
+        color:$preto;
+        text-decoration: none;  
+        display: block;
+        padding: 0.8rem;
+        text-transform: capitalize;
+        font-family: Tulia_bold;
+        &::before{
+          font-family:'FontAwesome';
+          color:$azul;
+          margin-right: 5px;
+        }
+
+      }
+    }
+  }
+}
+/*
+	Css Calendario
+*/
+.calendario{
+	border: 0.01rem solid $cinza;
+	box-shadow: 0px 0px 0.1rem 0 $cinza; 
+	border-radius: 0.2rem;
+	position: relative;
+	&:hover{
+		border: 0.01rem solid $azul;
+		box-shadow: 0px 0px 0.1rem 0 $azul; 
+	}
+	input{
+		box-shadow: 0px 0px 0.1rem 0 $branco!important; 
+		border:0!important;
+
+	}
+}
+
+.jquery-simpledatepicker-CalendarBut {
+	
+	cursor: pointer;
+	vertical-align: middle;
+	cursor: pointer;
+  	display: inline-block;
+  	padding: 0.2rem;
+	border-radius: 0.2rem;
+ 	border-radius: 0 0.2rem 0.2rem 0;
+  	text-align: center;
+  	&:before {
+  		color:$cinza;
+  		text-align: center;
+		font-family: 'FontAwesome';
+		font-size: 1.25rem;
+
+	}
+	&:hover:before{
+			color:$azul;
+		}
+}
+
+
+.jquery-simpledatepicker-datepicker {
+  width: 18rem;
+  top:2rem;
+  position: absolute;
+  z-index: 999999;
+  border: 0.01rem solid $cinza;
+  font-family: Tulia_regular;
+  background: $branco;
+
+}
+.jquery-simpledatepicker-datepicker * {
+  float: left;
+  width:14.2%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+
+  
+}
+.jquery-simpledatepicker-datepicker span {
+  font-size: 0.8rem;
+  font-weight: 700;
+ 
+}
+.jquery-simpledatepicker-preday,
+.jquery-simpledatepicker-postday {
+  color:$cinza;
+    
+}
+.jquery-simpledatepicker-datepicker a {
+  cursor: pointer;
+
+}
+.jquery-simpledatepicker-datepicker a:hover {
+	background: rgba($cinza,0.5);
+}
+.jquery-simpledatepicker-datepickertoday {
+  background:$azul;
+  color:$branco;
+
+}
+.jquery-simpledatepicker-datetxt {
+  width: 70%;
+  font-size: 0.9rem!important;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Tulia_bold;
+
+ 
+  
+}
+
+.jquery-simpledatepicker-CalendarCloseBut, 
+.jquery-simpledatepicker-CalendarTodayBut {
+  width: 50%;
+  text-align: center; 
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  font-weight:700;
+  
+}
+.jquery-simpledatepicker-CalendarCloset {
+  &:hover{
+  	color:$vermelho!important;
+  }
+}
+
+.jquery-simpledatepicker-nextmonthbut,
+.jquery-simpledatepicker-prevmonthbut{
+	font-size: 1.5rem;
+	font-family: Tulia_bold;
+	&:hover{background: $branco!important;}
+}

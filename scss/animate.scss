@@ -1,0 +1,27 @@
+@keyframes spin{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+@keyframes spinreverse{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(-360deg);
+	}
+}
+@keyframes fadeOut{
+
+}
+@keyframes mouve{
+	0%{
+		transform:translateX(0);
+	}
+	100%{
+		transform:translateX(205%);
+	}
+}

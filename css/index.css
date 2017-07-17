@@ -1,0 +1,216 @@
+.contiudo .login .form-registo .registo > hgroup h1, .contiudo .login hgroup h1 {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  line-height: 2.5rem; }
+.contiudo .login .form-registo .registo > hgroup h2, .contiudo .login hgroup h2 {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: lighter;
+  text-transform: capitalize; }
+
+.principal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap; }
+
+.contiudo {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row nowrap;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #3c8dbc; }
+  .contiudo .info {
+    flex: 4 0 100;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowwrap;
+    justify-content: center;
+    align-items: center;
+    flex: 2 0;
+    color: #ffffff;
+    position: relative;
+    height: 100%; }
+    .contiudo .info::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 20%;
+      background: url("../img/fudo.jpg") no-repeat;
+      background-size: cover;
+      filter: saturate(2) grayscale(20%); }
+    .contiudo .info .bem-vindo {
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      flex-flow: column nowrap;
+      text-align: center; }
+      .contiudo .info .bem-vindo > hgroup {
+        margin-top: 2rem;
+        animation-duration: 5s;
+        animation-name: zoom; }
+        .contiudo .info .bem-vindo > hgroup h1 {
+          font-family: Tulia_bold;
+          font-size: 3rem;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: lighter;
+          letter-spacing: 1rem;
+          margin-left: 2rem;
+          line-height: 2.5rem; }
+        .contiudo .info .bem-vindo > hgroup h2 {
+          margin-top: 1rem;
+          font-size: 1rem;
+          color: #ffffff;
+          font-weight: lighter;
+          text-transform: uppercase; }
+      .contiudo .info .bem-vindo > div {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 55%; }
+        .contiudo .info .bem-vindo > div span {
+          border: 1px solid #ffffff;
+          width: 45%;
+          position: relative;
+          margin-bottom: 2rem;
+          margin-top: 2rem; }
+          .contiudo .info .bem-vindo > div span:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            left: -1px;
+            top: -7px;
+            background: #ffffff;
+            position: absolute;
+            border-radius: 100%; }
+          .contiudo .info .bem-vindo > div span:first-child:before {
+            left: 100%;
+            right: -1px !important; }
+      .contiudo .info .bem-vindo button {
+        margin: 0 auto;
+        width: 200px;
+        margin-bottom: 2rem;
+        font-size: 1rem !important;
+        padding: 1rem !important;
+        padding: 0.6rem;
+        border-radius: 0.2rem;
+        border: 0;
+        font-size: 1rem;
+        font-family: Tulia_bold;
+        background: transparent;
+        color: #ffffff;
+        text-transform: capitalize;
+        border: 0.1rem solid #ffffff; }
+        .contiudo .info .bem-vindo button:hover {
+          cursor: pointer; }
+  .contiudo .login {
+    padding: 2%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 456px;
+    min-width: 456px; }
+    .contiudo .login .form-registo {
+      height: 100%;
+      position: absolute;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 348.406px; }
+      .contiudo .login .form-registo .registo {
+        width: 90%;
+        min-height: 334.813px;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column nowwrap; }
+        .contiudo .login .form-registo .registo > hgroup {
+          text-align: center; }
+          .contiudo .login .form-registo .registo > hgroup > h1 {
+            font-family: Tulia_bold;
+            color: #ffffff;
+            font-size: 1.5rem; }
+          .contiudo .login .form-registo .registo > hgroup > h2 {
+            font-size: 0.9rem;
+            color: #ffffff;
+            font-weight: lighter;
+            text-transform: uppercase; }
+        .contiudo .login .form-registo .registo p {
+          font-size: 1rem;
+          margin-top: 1rem;
+          text-align: justify; }
+    .contiudo .login hgroup {
+      text-align: center; }
+    .contiudo .login div.fa {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      .contiudo .login div.fa::before {
+        font-size: 6rem;
+        color: #3c8dbc; }
+    .contiudo .login div.load {
+      margin-top: 1rem;
+      height: 30px;
+      font-size: 1.4rem;
+      color: #3c8dbc;
+      font-family: Tulia_bold;
+      letter-spacing: 0.2rem; }
+    .contiudo .login div.login-form {
+      position: relative;
+      padding: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      flex-flow: column nowrap;
+      width: 40%;
+      min-height: 128px;
+      height: 20%; }
+      .contiudo .login div.login-form form.form-login, .contiudo .login div.login-form form.form-mail {
+        position: absolute;
+        margin: 0 auto;
+        width: 100%; }
+      .contiudo .login div.login-form > form {
+        display: flex;
+        flex-direction: column;
+        flex-flow: column nowrap; }
+    .contiudo .login a {
+      font-family: Tulia_regular;
+      font-weight: 700;
+      color: #000000;
+      text-decoration: none;
+      padding: 1rem;
+      font-size: 1rem; }
+      .contiudo .login a:hover {
+        cursor: pointer;
+        color: #3c8dbc;
+        text-decoration: underline; }
+
+.login-is-desable div.login-form, .login-is-desable a {
+  display: none !important; }
+.login-is-desable div.fa {
+  animation-duration: 1s;
+  animation-name: retate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+/*# sourceMappingURL=index.css.map */
