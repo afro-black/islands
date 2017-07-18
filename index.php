@@ -7,9 +7,8 @@
 	<link rel="stylesheet" href="css/css.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
-	<script src="js/script.js" charset="utf-8" ></script>
-	<script src="js/_funcao.js" charset="utf-8" ></script>
+	<script src="resources/js/jquery-3.1.1.min.js" charset="utf-8"></script>
+	<script src="resources/js/script.js" charset="utf-8" ></script>
 </head>
  <body>
  	<section class="principal">
@@ -77,7 +76,6 @@
 				 <section class="form-registo flipped-2">
 				  				 <hgroup>
  					<h1>Crie a sua conta</h1>
- 					<h2>unica e bela</h2>
  				</hgroup>
  				<div class="fa fa-user-circle">	
 				</div>
@@ -85,19 +83,19 @@
  				<form class="registo ">
 					<div class="label-input input">
 						<label>e-mail*</label>
-						<input type="text" placeholder="e-mail">
+						<input type="text" id="accountEmail" >
 					</div>
 					<div class="label-input input">
 						<label >nome completo*</label>
-						<input type="text" placeholder="nome completo">
+						<input type="text" >
 					</div>
 					<div class="label-input input">
 						<label>utilizador*</label>
-						<input type="text" placeholder="utilizador">
+						<input type="text" >
 					</div>
 					<div class="label-input inpul">
 						<label>palavra passe*</label>
-						<input type="password" placeholder="palavra passe">
+						<input type="password" >
 					</div>
 					<div class="buttom">
 						<button class="btn-confirmar">registar</button>
@@ -114,4 +112,5 @@
  		</section>
  	</section>
  </body>
+ <script src="resources/js/conta/conta.js"></script>
  </html>
