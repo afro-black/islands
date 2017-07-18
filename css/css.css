@@ -218,8 +218,8 @@
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: 'FontAwesome';
-  font-weight: bolder;
+  font-weight: 900;
+  font-stretch: condensed;
   background: transparent;
   color: rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
@@ -236,8 +236,8 @@
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: 'FontAwesome';
-  font-weight: bolder;
+  font-weight: 900;
+  font-stretch: condensed;
   background: transparent;
   color: #ffffff;
   text-transform: capitalize;
@@ -251,8 +251,8 @@
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: 'FontAwesome';
-  font-weight: bolder;
+  font-weight: 900;
+  font-stretch: condensed;
   background: #3c8dbc;
   color: #ffffff;
   text-transform: capitalize;
@@ -266,8 +266,8 @@
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: 'FontAwesome';
-  font-weight: bolder;
+  font-weight: 900;
+  font-stretch: condensed;
   background: transparent;
   color: rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
@@ -284,8 +284,8 @@
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: 'FontAwesome';
-  font-weight: bolder;
+  font-weight: 900;
+  font-stretch: condensed;
   background: #c00;
   color: #ffffff;
   text-transform: capitalize;

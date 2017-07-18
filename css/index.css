@@ -113,8 +113,8 @@
         border-radius: 0.2rem;
         border: 0;
         font-size: 1rem;
-        font-family: 'FontAwesome';
-        font-weight: bolder;
+        font-weight: 900;
+        font-stretch: condensed;
         background: transparent;
         color: #ffffff;
         text-transform: capitalize;

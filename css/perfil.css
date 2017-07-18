@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contiudoPerfil > hgroup h1 {
   font-size: 3rem;
   color: rgba(0, 0, 0, 0.6);
@@ -67,7 +68,9 @@
     flex-flow: column nowrap;
     padding: 1rem;
     min-width: 234px;
-    align-items: center; }
+    align-items: center;
+    /* Esconde o input */
+    /* Apar├¬ncia que ter├í o seletor de arquivo */ }
     .contiudo .painel-dados .dados-basic .imgUtilizador {
       width: 8rem;
       height: 8rem;
@@ -75,15 +78,27 @@
       position: relative;
       background: url("../img/user.png") center no-repeat;
       background-size: cover; }
+    .contiudo .painel-dados .dados-basic > input[type='file'] {
+      display: none; }
+    .contiudo .painel-dados .dados-basic > label {
+      border-radius: 5px;
+      color: #3c8dbc;
+      cursor: pointer;
+      margin: 10px;
+      padding: 6px 20px;
+      font-size: 1.5rem;
+      text-transform: capitalize; }
     .contiudo .painel-dados .dados-basic .names-utili {
       text-align: center; }
       .contiudo .painel-dados .dados-basic .names-utili > h1 {
-        font-size: 1.2rem;
-        font-family: Tulia_bold;
-        color: #3c8dbc; }
+        font-size: 1.5rem;
+        font-family: Tulia_bold; }
       .contiudo .painel-dados .dados-basic .names-utili h2, .contiudo .painel-dados .dados-basic .names-utili h3 {
         color: #000000;
-        font-size: 1rem; }
+        font-size: 1.5rem; }
+    .contiudo .painel-dados .dados-basic div {
+      font-size: 1rem;
+      text-transform: uppercase; }
   .contiudo .painel-dados .dados {
     flex: 3 0;
     overflow: auto;

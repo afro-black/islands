@@ -270,13 +270,13 @@
 										<div class="imgUtilizador">
 
 										</div>
-										<a href="">alterar foto</a>
+										<label for='selecao-arquivo'>alterar foto</label>
+										<input id='selecao-arquivo' type='file'>
 										<hgroup class="names-utili">
 											<h1>[nome user]</h1>
-											<h2>[nome propio]</h2>
+											<h2>[nome]</h2>
 											<h3>[apelido]</h3>
 										</hgroup>
-										<div>free</div>
 								</section>
 								<div class="form ">
 									<form class="dados-pessoais d-none">
