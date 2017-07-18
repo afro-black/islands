@@ -17,10 +17,15 @@
 			border-radius: 0.2rem;
 			border:0;
 			font-size: 1rem;
-				font-family: Tulia_bold;
+			 font-family: 'FontAwesome';
+			 font-weight: bolder;
 			background: $fundo;
 			color:$color;
 			text-transform: capitalize;
+			box-shadow: 0 0.1rem  0.3rem rgba($fundo,0.8),
+						0 0.1rem 0.3rem $preto; 
+						text-transform: uppercase;
+
 			&:hover {
 				cursor: pointer;
 			}

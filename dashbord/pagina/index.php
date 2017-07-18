@@ -5,9 +5,7 @@
 			<section class="corpo">
 			<?php setMenuLateral() ?>
 				<section class="contiudo">
-					
 					<?php setHome() ?>
-					
 				</section>
 				<?php setmenuUser() ?>
 			</section>

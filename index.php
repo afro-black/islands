@@ -48,9 +48,9 @@
 						<label>palavra passe</label>
 						<input type="password" placeholder="palara passe">
 					</div>
-					<div>
+					<div class="buttom">
 						<button class="btn-confirmar form-l-entrar">entrar</button>
-						<button class="btn-registar login-regis">registar</button>
+						<button class="btn-registar login-regis">criar conta</button>
 					</div>
 
 				</form>
@@ -69,7 +69,7 @@
 					</div>
 				</form>
 				</div>
-				<div class="load">
+				<div class="load d-none">
 					<span class="loader load-circle"></span>
 					Carregando
 				</div>
@@ -99,11 +99,11 @@
 						<label>palavra passe*</label>
 						<input type="password" placeholder="palavra passe">
 					</div>
-					<div>
+					<div class="buttom">
 						<button class="btn-confirmar">registar</button>
 						<button class="btn-cancel cancel-regis">cancel</button>
 					</div>
-						<div class="load">
+						<div class="load d-none">
 					<span class="loader load-circle"></span>
 					Carregando
 				</div>

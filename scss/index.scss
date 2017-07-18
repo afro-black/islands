@@ -115,6 +115,9 @@
 		justify-content: center;
 		max-width: 456px;
 		min-width: 456px;	
+			>div.load{	
+		     width: 50%;
+		}
 		.form-registo{
 			height: 100%;
 			position: absolute;
@@ -124,8 +127,7 @@
 			justify-content: center;
 			max-width: 348.406px;
 			.registo{
-			width: 90%;
-			min-height: 334.813px;
+			width: 80%;
 			@include flex(column,nowwrap);
 			> hgroup{
 			
@@ -172,21 +174,25 @@
 		     font-family: Tulia_bold;
 		     letter-spacing: 0.2rem;	
 		}
-
+		div.buttom{
+			margin-top: 0.5rem;
+			.btn-confirmar{margin-right: 0.5rem;}
+		}
 		div.login-form{
 			position: relative;
 			padding: 0.6rem;
 			@include flex(column,nowrap);
-			width: 40%;
+			width: 50%;
 			min-height: 128px;
-			height: 20%;
+			height: 21%;
+			
 			form.form-login,form.form-mail{
 			  position: absolute;
   			 margin: 0 auto;
   			 width: 100%;
 			}
 			>form{
-
+				
 				@include flex(column,nowrap);
 			}
 		}
@@ -198,6 +204,8 @@
 			text-decoration: none;
 			padding: 1rem;
 			font-size: 1rem;
+			text-align: center;
+			margin-left: 1rem;
 			&:hover{
 				cursor: pointer;
 				color:$azul;

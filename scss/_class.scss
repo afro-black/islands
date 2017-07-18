@@ -204,35 +204,30 @@ line-height: 60rem;
 	
 }
 .btn-cancel{
-	@include btn(rgba($cinza,0.8),rgba($preto,0.4));
+	@include btn(transparent,rgba($preto,0.6));
+	box-shadow: 0 0  0 transparent;
 	&:hover{
-		background:$cinza;
-			color: rgba($preto,0.6);
-		
+		color:rgba($preto,0.8);
 	}
+
 }
 .btn-branco{
 	@include btn(transparent,$branco);
 }
 
 .btn-confirmar{
-	@include btn(rgba($azul,0.8),$branco);
-		&:hover{
-		background:$azul;
-	}
+	@include btn($azul,$branco);
 }
 
 .btn-registar{
-	@include btn(rgba($verde,0.8),$branco);
-		&:hover{
-		background:$verde;
+	@include btn(transparent,rgba($preto,0.6));
+	box-shadow: 0 0  0 transparent;
+	&:hover{
+		color:$verde;
 	}
 }
 .btn-eliminar{
-	@include btn(rgba($vermelho,0.8),$branco);
-		&:hover{
-		background:$vermelho;
-	}
+	@include btn($vermelho,$branco);
 }
 
 .row{
@@ -507,19 +502,51 @@ line-height: 60rem;
     }
 }
 .menu-l-hide{
-  width: 50px;
+	width: 50px;
    min-width: 50px!important;
-   ul li a::before{
+   h1 span{
+		display: none;
+   }
+   transition:  0.18s all linear;
+   ul li a{
+   	position: relative;
+    	max-height: 1.5rem;
+    	height: 1.5rem;
+    	span{
+    		transform:scaleX(0);
+    		max-height: 1.5rem;
+    		height: 1.5rem;
+			padding: 1rem;
+			text-align: center;
+			top: 0;
+			left: 105%;
+			font-size: 1.5rem;
+			z-index: 999;
+			position: absolute;
+			background: $preto;
+    	}
+    	&:hover{
+    		span{
+    			display: inline-block;
+    			
+    				transform:scaleX(1);
+    				 transition: transform 0.2s  linear;
+    		}
+    	}
+   &::before{
      margin-right: 1rem;
         font-size: 1.5rem!important;
-   }
+   }}
 }
 .menu-l-is-ative{
+	width: 200px;
+  transition:  0.2s all linear;	
    >h1::before{
         margin-right: 1rem;
         font-size: 1.5rem;
    }
     ul li a{
+    	
       &::before{
            margin-right: 1rem;
           font-size: 1rem;

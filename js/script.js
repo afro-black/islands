@@ -158,10 +158,11 @@ $(document).ready(function() {
 $('.fa-bars').click(function(event) {
 	/* Act on the event */
 	$(this).parent().toggleClass('menu-l-is-ative menu-l-hide')
-	if ($(this).parent().hasClass('menu-l-hide')) {
-		$('.menu-l-hide h1 , .menu-l-hide ul a').html('');
+	var ative = $(this).parent().hasClass('menu-l-is-ative');
+	if (ative===true) {
+		$('.menu-latera  h1 , .menu-latera ul a');
 	}else{
-
+		$('.menu-latera  h1 , .menu-latera  ul a');
 	}	
 
 });

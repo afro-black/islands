@@ -113,10 +113,13 @@
         border-radius: 0.2rem;
         border: 0;
         font-size: 1rem;
-        font-family: Tulia_bold;
+        font-family: 'FontAwesome';
+        font-weight: bolder;
         background: transparent;
         color: #ffffff;
         text-transform: capitalize;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+        text-transform: uppercase;
         border: 0.1rem solid #ffffff; }
         .contiudo .info .bem-vindo button:hover {
           cursor: pointer; }
@@ -130,6 +133,8 @@
     justify-content: center;
     max-width: 456px;
     min-width: 456px; }
+    .contiudo .login > div.load {
+      width: 50%; }
     .contiudo .login .form-registo {
       height: 100%;
       position: absolute;
@@ -141,8 +146,7 @@
       justify-content: center;
       max-width: 348.406px; }
       .contiudo .login .form-registo .registo {
-        width: 90%;
-        min-height: 334.813px;
+        width: 80%;
         display: flex;
         flex-direction: column;
         flex-flow: column nowwrap; }
@@ -176,15 +180,19 @@
       color: #3c8dbc;
       font-family: Tulia_bold;
       letter-spacing: 0.2rem; }
+    .contiudo .login div.buttom {
+      margin-top: 0.5rem; }
+      .contiudo .login div.buttom .btn-confirmar {
+        margin-right: 0.5rem; }
     .contiudo .login div.login-form {
       position: relative;
       padding: 0.6rem;
       display: flex;
       flex-direction: column;
       flex-flow: column nowrap;
-      width: 40%;
+      width: 50%;
       min-height: 128px;
-      height: 20%; }
+      height: 21%; }
       .contiudo .login div.login-form form.form-login, .contiudo .login div.login-form form.form-mail {
         position: absolute;
         margin: 0 auto;
@@ -199,7 +207,9 @@
       color: #000000;
       text-decoration: none;
       padding: 1rem;
-      font-size: 1rem; }
+      font-size: 1rem;
+      text-align: center;
+      margin-left: 1rem; }
       .contiudo .login a:hover {
         cursor: pointer;
         color: #3c8dbc;

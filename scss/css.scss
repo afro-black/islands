@@ -85,7 +85,7 @@ body{
     }
   } 
 }
-.menu-latera,.menu-utilizador{
+.menu-utilizador,.menu-latera{
   flex:1 0 auto;
   min-width: 200px;
   max-width: 200px;
@@ -93,6 +93,7 @@ body{
 
 .menu-latera{
    background: rgba($preto,0.8);
+  
   >h1{
     position: relative;
     background: $preto;
@@ -102,6 +103,9 @@ body{
     text-transform: uppercase;
     display: block;
     font-family: Tulia_bold;
+    span{
+      font-size: 1.5rem;
+    }
       &::before{
           font-family:'FontAwesome';
           cursor:pointer
@@ -119,8 +123,11 @@ body{
         display: block;
         padding: 1rem;
         font-size: 1rem;
-        text-transform: capitalize;
         position: relative;
+        span{
+          font-size: 1rem;
+          text-transform: capitalize; 
+        }
         &::before{
           font-family:'FontAwesome';
         }

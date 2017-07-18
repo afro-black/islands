@@ -218,25 +218,31 @@
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: Tulia_bold;
-  background: rgba(204, 204, 204, 0.8);
-  color: rgba(0, 0, 0, 0.4);
-  text-transform: capitalize; }
+  font-family: 'FontAwesome';
+  font-weight: bolder;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: capitalize;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  text-transform: uppercase;
+  box-shadow: 0 0  0 transparent; }
   .btn-cancel:hover {
     cursor: pointer; }
   .btn-cancel:hover {
-    background: #cccccc;
-    color: rgba(0, 0, 0, 0.6); }
+    color: rgba(0, 0, 0, 0.8); }
 
 .btn-branco {
   padding: 0.6rem;
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: Tulia_bold;
+  font-family: 'FontAwesome';
+  font-weight: bolder;
   background: transparent;
   color: #ffffff;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  text-transform: uppercase; }
   .btn-branco:hover {
     cursor: pointer; }
 
@@ -245,42 +251,48 @@
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: Tulia_bold;
-  background: rgba(60, 141, 188, 0.8);
+  font-family: 'FontAwesome';
+  font-weight: bolder;
+  background: #3c8dbc;
   color: #ffffff;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  box-shadow: 0 0.1rem 0.3rem rgba(60, 141, 188, 0.8), 0 0.1rem 0.3rem #000000;
+  text-transform: uppercase; }
   .btn-confirmar:hover {
     cursor: pointer; }
-  .btn-confirmar:hover {
-    background: #3c8dbc; }
 
 .btn-registar {
   padding: 0.6rem;
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: Tulia_bold;
-  background: rgba(0, 128, 0, 0.8);
-  color: #ffffff;
-  text-transform: capitalize; }
+  font-family: 'FontAwesome';
+  font-weight: bolder;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: capitalize;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  text-transform: uppercase;
+  box-shadow: 0 0  0 transparent; }
   .btn-registar:hover {
     cursor: pointer; }
   .btn-registar:hover {
-    background: #008000; }
+    color: #008000; }
 
 .btn-eliminar {
   padding: 0.6rem;
   border-radius: 0.2rem;
   border: 0;
   font-size: 1rem;
-  font-family: Tulia_bold;
-  background: rgba(204, 0, 0, 0.8);
+  font-family: 'FontAwesome';
+  font-weight: bolder;
+  background: #c00;
   color: #ffffff;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  box-shadow: 0 0.1rem 0.3rem rgba(204, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  text-transform: uppercase; }
   .btn-eliminar:hover {
     cursor: pointer; }
-  .btn-eliminar:hover {
-    background: #c00; }
 
 .row {
   display: flex;
@@ -504,25 +516,51 @@
 
 .menu-l-hide {
   width: 50px;
-  min-width: 50px !important; }
-  .menu-l-hide ul li a::before {
-    margin-right: 1rem;
-    font-size: 1.5rem !important; }
+  min-width: 50px !important;
+  transition: 0.18s all linear; }
+  .menu-l-hide h1 span {
+    display: none; }
+  .menu-l-hide ul li a {
+    position: relative;
+    max-height: 1.5rem;
+    height: 1.5rem; }
+    .menu-l-hide ul li a span {
+      transform: scaleX(0);
+      max-height: 1.5rem;
+      height: 1.5rem;
+      padding: 1rem;
+      text-align: center;
+      top: 0;
+      left: 105%;
+      font-size: 1.5rem;
+      z-index: 999;
+      position: absolute;
+      background: #000000; }
+    .menu-l-hide ul li a:hover span {
+      display: inline-block;
+      transform: scaleX(1);
+      transition: transform 0.2s  linear; }
+    .menu-l-hide ul li a::before {
+      margin-right: 1rem;
+      font-size: 1.5rem !important; }
 
-.menu-l-is-ative > h1::before {
-  margin-right: 1rem;
-  font-size: 1.5rem; }
-.menu-l-is-ative ul li a::before {
-  margin-right: 1rem;
-  font-size: 1rem; }
-.menu-l-is-ative ul li a::after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  right: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent; }
+.menu-l-is-ative {
+  width: 200px;
+  transition: 0.2s all linear; }
+  .menu-l-is-ative > h1::before {
+    margin-right: 1rem;
+    font-size: 1.5rem; }
+  .menu-l-is-ative ul li a::before {
+    margin-right: 1rem;
+    font-size: 1rem; }
+  .menu-l-is-ative ul li a::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    right: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; }
 
 * {
   padding: 0;
@@ -608,7 +646,7 @@ body {
       color: #ffffff;
       padding: 0 0 0 4%; }
 
-.menu-latera, .menu-utilizador {
+.menu-utilizador, .menu-latera {
   flex: 1 0 auto;
   min-width: 200px;
   max-width: 200px; }
@@ -624,6 +662,8 @@ body {
     text-transform: uppercase;
     display: block;
     font-family: Tulia_bold; }
+    .menu-latera > h1 span {
+      font-size: 1.5rem; }
     .menu-latera > h1::before {
       font-family: 'FontAwesome';
       cursor: pointer; }
@@ -636,8 +676,10 @@ body {
       display: block;
       padding: 1rem;
       font-size: 1rem;
-      text-transform: capitalize;
       position: relative; }
+      .menu-latera > ul > li > a span {
+        font-size: 1rem;
+        text-transform: capitalize; }
       .menu-latera > ul > li > a::before {
         font-family: 'FontAwesome'; }
       .menu-latera > ul > li > a:hover {
