@@ -6,6 +6,7 @@
 							<br>
 							<li><a class="fa fa-cube" href=""><span>restaurante</span></a></li>
 							<li ><a class="fa fa-bed" href=""><span>hotel</span></a></li>
+							<li ><a class="fa fa-leaf" href=""><span>evento</span></a></li>
 							<br>
 							<li><a class="a fa-diamond" href=""><span>patrimonio</span></a></li>
 							<li><a class="a fa-users" href=""><span>utilizadores</span></a></li>

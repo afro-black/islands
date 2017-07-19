@@ -23,8 +23,8 @@
 		aguarde
 	</section>
 		<section class="corpoModal d-none">
-		<div class="alert">
-				<section >
+		<div class="alert d-none"><!-- so pra pogramar -->
+				<section class="">
 					<i class="fa fa-exclamation-triangle"></i>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos, asperiores. Mollitia dolores quas 
@@ -35,10 +35,10 @@
 						<button class="btn-cancel fecharModal">cancelar</button>
 				</footer>
 			</div>
-			<div class="corpo-modal d-none">
-				<header>Alterar contato</header>
-				<section class="modal-dados">
-					<div class="label-input input">
+			<div class="corpo-modal">
+				
+				 <section class="modal-dados">
+				<!-- 	<div class="label-input input">
 						<label>telemovel</label>
 						<input type="text" >
 					</div>
@@ -49,10 +49,11 @@
 					<div class="label-input input">
 						<label>e-mail*</label>
 						<input type="text" >
-					</div>
-				</section>
+					</div> -->
+
+				</section> 
 				<footer>
-						<button class="btn-registar">alterar</button>
+						<button class="btn-confirmar">guardar</button>
 						<button class="btn-cancel fecharModal">cancelar</button>
 				</footer> 
 			</div>

@@ -86,7 +86,11 @@
 						<input type="text" id="accountEmail" >
 					</div>
 					<div class="label-input input">
-						<label >nome completo*</label>
+						<label >nome proprio*</label>
+						<input type="text" >
+					</div>
+					<div class="label-input input">
+						<label >apelido*</label>
 						<input type="text" >
 					</div>
 					<div class="label-input input">

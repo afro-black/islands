@@ -20,6 +20,17 @@
 .d-none-a::after {
   display: none !important; }
 
+div.load {
+  width: 50%; }
+
+div.load {
+  margin-top: 1rem;
+  height: 30px;
+  font-size: 1.4rem;
+  color: #3c8dbc;
+  font-family: Tulia_bold;
+  letter-spacing: 0.2rem; }
+
 .icon-info {
   margin-top: 1rem; }
   .icon-info i::before {
