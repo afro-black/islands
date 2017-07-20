@@ -204,10 +204,8 @@
 	<section class="corpo-dash">
 							<section class="info">
 
- 							<!-- <i class="fa fa-podcast"></i>
-							<span>Selecione um item para ler dados</span>
-							a ser trabalhado  -->
-							
+ 							<i class="fa fa-podcast"></i>
+							<span>Selecione um item para mais detalhes</span>
 
 						<!-- aki dados  de loads-->							
 					

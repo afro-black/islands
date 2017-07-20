@@ -6,7 +6,6 @@
 	width: 100%;
 	position: relative;
 	@include flex(row,nowrap);
-	
 	.lista-regis{
 		flex: 1 0 auto;
 		 min-width: 280px!important;
@@ -232,12 +231,14 @@
 	
 			>i{
 			margin-top: 30%;
-			font-size: 6rem;
+			font-size: 4rem;
 			color:$azul;
+			text-align: center;
 		}
 		>span{
-			font-size: 1.3rem;
-			margin-top: 2rem;
+			font-size: 1.2rem;
+			margin-top: 1rem;
+			text-align: center;
 			
 		}
 	}

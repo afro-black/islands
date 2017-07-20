@@ -14,8 +14,13 @@
 		transform:rotate(-360deg);
 	}
 }
-@keyframes fadeOut{
-
+@keyframes fadeIn{
+	0%{
+		transform:scale(0);
+	}
+	100%{
+		transform:scale(1);
+	}
 }
 @keyframes mouve{
 	0%{

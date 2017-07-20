@@ -202,11 +202,13 @@
                 color: #3c8dbc; }
       .contiudo .corpo-dash .info > i {
         margin-top: 30%;
-        font-size: 6rem;
-        color: #3c8dbc; }
+        font-size: 4rem;
+        color: #3c8dbc;
+        text-align: center; }
       .contiudo .corpo-dash .info > span {
-        font-size: 1.3rem;
-        margin-top: 2rem; }
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        text-align: center; }
     .contiudo .corpo-dash .corpo-form {
       z-index: 2;
       position: absolute;

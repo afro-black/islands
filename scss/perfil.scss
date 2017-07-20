@@ -16,41 +16,7 @@
 }
 .contiudo {
 	.tabs {
-		ul{
-			@include flex(row,nowrap);
-			li{
-				position: relative;
-				font-family: Tulia_bold;
-				font-size: 1rem;
-				list-style: none;
-				padding: 0.5rem 1rem 0.5rem 0rem;
-				text-align: center;
-				text-transform: capitalize;
-				font-weight: 700;
-				color:$preto;
-				transition: color 1s linear;
-				&:before{
-					content:"";
-					position: absolute;
-					left: 12%;
-					width: 50%;
-					bottom: 0;
-					border-bottom:0.3rem solid $azul;
-					transform:scale(0);
-					transition: transform 0.5s linear;
-
-					
-				}
-				&:hover{
-					color:$azul;
-					transition: color 0.3s linear;
-					cursor:pointer;
-				}
-				&:first-child{
-					margin-left: 1rem;
-				}
-			}
-		}
+		@include tabs();
 	}
 	.painel-dados{
 			@include flex(row,nowrap);
@@ -153,7 +119,8 @@
 					line-height: 2.5rem;
 					color:$azul;
 					
-				}			}
+				}			
+			}
 		}
 		
 	}

@@ -12,6 +12,11 @@
     transform: rotate(0deg); }
   100% {
     transform: rotate(-360deg); } }
+@keyframes fadeIn {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 @keyframes mouve {
   0% {
     transform: translateX(0); }
@@ -226,7 +231,7 @@ div.load {
 
 .btn-cancel {
   padding: 0.6rem;
-  border-radius: 0.2rem;
+  border-radius: 0.8%;
   border: 0;
   font-size: 1rem;
   font-weight: 900;
@@ -234,7 +239,7 @@ div.load {
   background: transparent;
   color: rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  box-shadow: 0 0.1rem 0.26rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.26rem #000000;
   text-transform: uppercase;
   box-shadow: 0 0  0 transparent; }
   .btn-cancel:hover {
@@ -244,7 +249,7 @@ div.load {
 
 .btn-branco {
   padding: 0.6rem;
-  border-radius: 0.2rem;
+  border-radius: 0.8%;
   border: 0;
   font-size: 1rem;
   font-weight: 900;
@@ -252,14 +257,14 @@ div.load {
   background: transparent;
   color: #ffffff;
   text-transform: capitalize;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  box-shadow: 0 0.1rem 0.26rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.26rem #000000;
   text-transform: uppercase; }
   .btn-branco:hover {
     cursor: pointer; }
 
 .btn-confirmar {
   padding: 0.6rem;
-  border-radius: 0.2rem;
+  border-radius: 0.8%;
   border: 0;
   font-size: 1rem;
   font-weight: 900;
@@ -267,14 +272,14 @@ div.load {
   background: #3c8dbc;
   color: #ffffff;
   text-transform: capitalize;
-  box-shadow: 0 0.1rem 0.3rem rgba(60, 141, 188, 0.8), 0 0.1rem 0.3rem #000000;
+  box-shadow: 0 0.1rem 0.26rem rgba(60, 141, 188, 0.8), 0 0.1rem 0.26rem #000000;
   text-transform: uppercase; }
   .btn-confirmar:hover {
     cursor: pointer; }
 
 .btn-registar {
   padding: 0.6rem;
-  border-radius: 0.2rem;
+  border-radius: 0.8%;
   border: 0;
   font-size: 1rem;
   font-weight: 900;
@@ -282,7 +287,7 @@ div.load {
   background: transparent;
   color: rgba(0, 0, 0, 0.6);
   text-transform: capitalize;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  box-shadow: 0 0.1rem 0.26rem rgba(0, 0, 0, 0.8), 0 0.1rem 0.26rem #000000;
   text-transform: uppercase;
   box-shadow: 0 0  0 transparent; }
   .btn-registar:hover {
@@ -292,7 +297,7 @@ div.load {
 
 .btn-eliminar {
   padding: 0.6rem;
-  border-radius: 0.2rem;
+  border-radius: 0.8%;
   border: 0;
   font-size: 1rem;
   font-weight: 900;
@@ -300,7 +305,7 @@ div.load {
   background: #c00;
   color: #ffffff;
   text-transform: capitalize;
-  box-shadow: 0 0.1rem 0.3rem rgba(204, 0, 0, 0.8), 0 0.1rem 0.3rem #000000;
+  box-shadow: 0 0.1rem 0.26rem rgba(204, 0, 0, 0.8), 0 0.1rem 0.26rem #000000;
   text-transform: uppercase; }
   .btn-eliminar:hover {
     cursor: pointer; }
